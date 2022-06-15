@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" integrity="sha512-qzgHTQ60z8RJitD5a28/c47in6WlHGuyRvMusdnuWWBB6fZ0DWG/KyfchGSBlLVeqAz+1LzNq+gGZkCSHnSd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shop</title>
+</head>
+<body>
+   <div id="loadermain"> <div class="lds-ring" id="loader"><div></div><div></div><div></div><div></div></div></div>
+    <div id="wrapper">
+        <header>
+          <nav class="navbar navbar-dark bg-primary">
+              <div class="container-fluid">
+                <a class="navbar-brand">Shopify</a>
+                <form class="d-flex" id="form" role="search">
+                  <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+      </header>
+      <div class="bla">
+        <div class="modal" id="exampleModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carusel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="./img/24oylik.png" class="d-block w-100" alt="carousel-1">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./img/oila.png" class="d-block w-100" alt="carousel-2">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/passport.png" class="d-block w-100" alt="carousel-3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="menu">
+        <ul class="links">
+          <li><i class="fa-solid fa-user"></i> Login</li>
+          <li><i class="fa-solid fa-cart-arrow-down"></i> Cart</li>
+          <li><i class="fa-solid fa-eject"></i> About</li>
+        </ul>
+      </div>
+      <section id="app">
+
+      </section>
+      <div class="pagination">
+        <button class="btn btn-outline-primary" onclick="previous()">Prev</button>
+        <button class="btn btn-outline-primary" onclick="next()">Next</button>
+      </div>
+      <hr>
+      <footer style="height: 80px;">
+        <h1 class="text-muted" style="text-align:center">ITPrototype 2022</h1>
+      </footer>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+</html>
